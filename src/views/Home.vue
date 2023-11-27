@@ -60,13 +60,15 @@ export default {
     onButtonClick(id) {
       this.buttons.forEach(button => {
         if (button.id === id) {
-          button.isActive = true
-          this.price = ''
-          this.val = ''
-          this.result = '0.00 ₽'
-          this.priceTitle = button.priceTitle
-          this.valueTitle = button.valueTitle
-          this.id = button.id
+          if(button.isActive != true) {
+            button.isActive = true
+            this.price = ''
+            this.val = ''
+            this.result = '0.00 ₽'
+            this.priceTitle = button.priceTitle
+            this.valueTitle = button.valueTitle
+            this.id = button.id
+          }
         } else {
           button.isActive = false
         }
