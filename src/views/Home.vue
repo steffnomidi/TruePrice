@@ -208,6 +208,7 @@ export default {
     color: #fff;
     width: 100%;
     font-size: calc( 2vh + .5vw);
+    height: 100%
   }
   .variants button.active {
     opacity: .8;
