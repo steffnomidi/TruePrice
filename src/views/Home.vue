@@ -41,11 +41,11 @@ export default {
   data() {
     return {
       buttons: [
-        { id: "mass", title: "За КГ", isActive: true, priceTitle: "Цена за килограмм", valueTitle: "граммов в упаковке"  },
-        { id: "vol", title: "За Литр", isActive: false, priceTitle: "Цена за литр", valueTitle: "миллилитров в упаковке"  },
-        { id: "count", title: "За Штуку", isActive: false, priceTitle: "Цена за штуку", valueTitle: "штук в упаковке" },
+        { id: "mass", title: "За КГ", isActive: true, priceTitle: "за килограмм", valueTitle: "граммов в упаковке"  },
+        { id: "vol", title: "За Литр", isActive: false, priceTitle: "за литр", valueTitle: "миллилитров в упаковке"  },
+        { id: "count", title: "За Штуку", isActive: false, priceTitle: "за штуку", valueTitle: "штук в упаковке" },
       ],
-      priceTitle: "Цена за килограмм",
+      priceTitle: "за килограмм",
       valueTitle: "граммов в упаковке",
       price: '',
       val: '',
@@ -133,11 +133,16 @@ export default {
   #result {
     display: flex;
     flex-direction: column;
-    height: 60%;
+    flex-grow: 5;
     justify-content: space-between;
   }
   #params {
-
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  #params .card {
+    flex-grow: 1;
   }
 
   .container {
@@ -149,7 +154,7 @@ export default {
   .card {
     margin-bottom: 20px;
     padding: 15px;
-    border: 2px solid #ccc;
+    border: 4px solid #ccc;
     border-radius: 1em;
     min-height: 1em;
     display: flex;
@@ -194,6 +199,7 @@ export default {
     font-size: calc( 2vh + .5vw );
   }
   .variants {
+    flex-grow: 1;
   }
   .variants button {
     background-color: #555;
@@ -217,6 +223,7 @@ export default {
   @media screen and (min-width: 600px) {
     .row#params {
       display: flex;
+      flex-direction: row;
       width: 100%;
       max-width: 100%;
       gap: 1.5rem;
