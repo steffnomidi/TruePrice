@@ -116,18 +116,19 @@ export default {
       -moz-appearance: textfield;
   }
   ::placeholder {
-  color: #ccc;
+  color: #aaa;
   opacity: 1; /* Firefox */
   }
 
   ::-ms-input-placeholder { /* Edge 12 -18 */
-    color: #ccc;
+    color: #aaa;
   }
 
   #screen {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    max-height: 100%;
     justify-content: space-between;
   }
   #result {
@@ -154,7 +155,7 @@ export default {
   .card {
     margin-bottom: 20px;
     padding: 15px;
-    border: 4px solid #ccc;
+    border: 4px solid #aaa;
     border-radius: 1em;
     min-height: 1em;
     display: flex;
@@ -168,7 +169,7 @@ export default {
     border-color: #ffae00;
   }
   .col.card .title {
-    color: #ccc;
+    color: #aaa;
     font-size: calc( 2vh + .3vw );
   }
 
@@ -193,7 +194,7 @@ export default {
   }
   .description {
     font-size: 1rem;
-    color: #ccc;
+    color: #aaa;
     font-weight: 500;
     text-align: right;
     font-size: calc( 2vh + .5vw );
