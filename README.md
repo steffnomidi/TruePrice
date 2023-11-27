@@ -1,5 +1,7 @@
 # price
-
+Навеяно [https://проверьцену.рф/](https://проверьцену.рф/)
+## Демо
+[https://tp.steffnomidi.ru/](https://tp.steffnomidi.ru/)
 ## Project setup
 ```
 npm install
