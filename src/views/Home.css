@@ -60,10 +60,16 @@
 
 
 #result {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-grow: 11;
     justify-content: space-between;
+}
+#githublink {
+    position: absolute;
+    left: .5em;
+    bottom: .5em;
 }
 
 #params {
