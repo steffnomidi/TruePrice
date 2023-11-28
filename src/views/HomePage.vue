@@ -28,7 +28,7 @@
       <div class="col card">
         <div class="title">Введите цену за упаковку</div>
         <div class="price">
-          <input type="number" v-model="price" class="remove-arrow" @keyup="onKeyup" placeholder="0" onkeydown="return event.keyCode !== 69" @focus="selectInput">
+          <input type="number" v-model="price" class="remove-arrow" @keyup="onKeyup" placeholder="0 ₽" onkeydown="return event.keyCode !== 69" @focus="selectInput">
         </div>
         <div class="empty"></div>
       </div>
