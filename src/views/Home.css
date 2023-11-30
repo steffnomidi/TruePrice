@@ -4,7 +4,10 @@
     The new CSS reset - version 1.8.5 (last updated 14.6.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
-
+html, body {
+    width: 100%;
+    height: 100%;
+}
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
@@ -131,7 +134,7 @@ meter {
 #screen {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
     max-height: 100%;
     justify-content: space-between;
 }
